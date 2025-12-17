@@ -1,6 +1,6 @@
 import dotenv from "dotenv"
 
-dotenv.config()
+dotenv.config({ quiet: true });
 
 export const ENV = {
     NODE_ENV: process.env.NODE_ENV,
@@ -14,8 +14,9 @@ export const ENV = {
     CLOUDINARY_API_KEY: process.env.CLOUDINARY_API_KEY,
     INNGEST_SIGNING_KEY: process.env.INNGEST_SIGNING_KEY,
     
-    // ADMIN_EMAIL: process.env.ADMIN_EMAIL,
-    // CLIENT_URL: process.env.CLIENT_URL,
+    ADMIN_EMAIL: process.env.ADMIN_EMAIL,
+    
+    CLIENT_URL: process.env.CLIENT_URL,
     // STRIPE_PUBLISHABLE_KEY: process.env.STRIPE_PUBLISHABLE_KEY,
     // STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY,
     // STRIPE_WEBHOOK_SECRET: process.env.STRIPE_WEBHOOK_SECRET,
